@@ -9,16 +9,8 @@
 # -------------------------------------------------------------------------
 
 
-def index():
-    """
-    example action using the internationalization operator T and flash
-    rendered by views/default/index.html or views/generic.html
-
-    if you need a simple wiki simply replace the two lines below with:
-    return auth.wiki()
-    """
-    response.flash = T("Hello World")
-    return dict(message=T('Welcome to web2py!'))
+def home():
+    return dict()
 
 
 def user():
@@ -38,6 +30,24 @@ def user():
     also notice there is http://..../[app]/appadmin/manage/auth to allow administrator to manage users
     """
     return dict(form=auth())
+
+def listaPaises():
+    return dict()
+
+def votartip():
+    return dict()
+
+def categorias():
+    return dict()
+
+def selectcategoria():
+    return dict()
+
+def soyresidente():
+    return dict()
+
+def agregartip():
+    return dict()
 
 
 @cache.action()
